@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Icon Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-container" id="weatherCard">
+        <h1>Weather Dashboard</h1>
+        <p class="subtitle">Select a condition to explore the weather</p>
+
+        <label for="weatherSelect">Choose Weather Condition</label>
+
+        <select id="weatherSelect">
+            <option value="">-- Select Weather --</option>
+            <option value="sunny">Sunny</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="rainy">Rainy</option>
+            <option value="stormy">Stormy</option>
+            <option value="snowy">Snowy</option>
+            <option value="windy">Windy</option>
+            <option value="foggy">Foggy</option>
+        </select>
+
+        <section class="weather-display" id="weatherDisplay" aria-live="polite">
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+            <h2 id="weatherTitle">Welcome!</h2>
+            <p id="weatherDescription">
+                Select a weather condition to see its details.
+            </p>
+        </section>
+
+        <p class="footer">Weather information • Static data demo</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #dbeafe, #e0e7ff);
+    transition: background 0.5s ease;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 32px 25px;
+    border-radius: 24px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 15px 45px rgba(30, 64, 175, 0.15);
+}
+
+h1 {
+    color: #1e3a8a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: white;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.weather-display {
+    margin-top: 25px;
+    padding: 28px 15px;
+    border-radius: 18px;
+    background: #eff6ff;
+    transition: background 0.4s ease;
+}
+
+.weather-icon {
+    font-size: 78px;
+    margin-bottom: 12px;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+.weather-display h2 {
+    color: #1e293b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-display p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 400px) {
+    .weather-container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .weather-icon {
+        font-size: 65px;
+    }
+}
